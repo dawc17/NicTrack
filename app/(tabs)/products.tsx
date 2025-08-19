@@ -26,16 +26,20 @@ const DATA = [
 
 export default function Index() {
   return (
-    <FlatList
-      key={"products-list"}
-      data={DATA}
-      renderItem={({ item }) => (
-        <View className="p-10 border border-gray-200 w-1/2">
-          <Text className="text-lg font-bold text-center">{item.title}</Text>
-        </View>
-      )}
-      keyExtractor={(item) => item.id}
-      numColumns={2}
-    />
+    <View className="flex-1 bg-zinc-800">
+      <FlatList
+        key={"products-list"}
+        data={DATA}
+        renderItem={({ item }) => (
+          <View className="p-10 border border-zinc-900 w-1/2">
+            <Text className="text-lg text-white font-bold text-center">
+              {item.title}
+            </Text>
+          </View>
+        )}
+        keyExtractor={(item) => item.id}
+        numColumns={2}
+      />
+    </View>
   );
 }
