@@ -4,7 +4,7 @@ import "../../global.css";
 export default function Index() {
   return (
     <View className="flex-1 items-center justify-center">
-      <Text className="text-green-500">ok.</Text>
+      <Text className="text-green-500">Products here</Text>
     </View>
   );
 }
