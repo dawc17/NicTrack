@@ -62,7 +62,7 @@ function Navbar() {
             <button
               key={item.id}
               onClick={() => handleNavigation(item.path)}
-              className="flex flex-col items-center justify-center flex-1 h-full transition-colors duration-200 hover:bg-gray-50"
+              className="flex flex-col items-center justify-center flex-1 h-full transition-colors duration-200 hover:bg-gray-200"
             >
               <IconComponent active={isActive} />
               <span
